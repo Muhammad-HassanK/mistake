@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Show"></h1>
+
+
+
+
+    <script>
+        let A1=[];
+        let A2=[];
+        
+        for (let index = 0; index < 11; index++) {
+            A1.push(Math.floor(Math.random()*100))
+            
+        }
+        for (let index = 0; index < A1.length; index++) {
+            A2.push(Math.floor(Math.random()*100))
+            
+        }
+        let sum=[];
+        for (let index = 0; index < 11; index++) {
+            sum.push(A1[index]+A2[index])
+            
+        }
+        // document.getElementById('Show').innerHTML= `First:${A1} <br> Second:${A2} <br> sum:${sum}`
+        document.getElementById("Show").innerHTML=(A1)+(A2)+(sum)
+    </script>
+</body>
+</html>
